@@ -11,7 +11,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 connectDB();
-app.use("/api/v1/newCalendar", newCalendar);
+app.use(
+  "https://extinct-bat-rugby-shirt.cyclic.app/api/v1/newCalendar",
+  newCalendar
+);
 if (process.env.NODE_ENV !== `production`) {
   app.use(morgan(`dev`));
 }
