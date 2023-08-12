@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(cors());
 connectDB();
 app.use(
-  "https://extinct-bat-rugby-shirt.cyclic.app/api/v1/newCalendar",
+  // "https://extinct-bat-rugby-shirt.cyclic.app/api/v1/newCalendar",
+  "/api/v1/newCalendar",
   newCalendar
 );
 if (process.env.NODE_ENV !== `production`) {
